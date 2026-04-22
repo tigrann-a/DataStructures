@@ -11,6 +11,7 @@
     <ProjectReference Include="..\MyLinkedListLib\MyLinkedListLib.csproj" />
     <ProjectReference Include="..\MyQueueLib\MyQueueLib.csproj" />
     <ProjectReference Include="..\MyStackLib\MyStackLib.csproj" />
+    <ProjectReference Include="..\MyStackWithArrayLib\MyStackWithArrayLib.csproj" />
   </ItemGroup>
 
 </Project>
