@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStackLib", "MyStackLib\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStackWithArrayLib", "MyStackWithArrayLib\MyStackWithArrayLib.csproj", "{07DB15B9-BB13-43B6-8338-9FD0EFE310DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyQueueWithArrayLib", "MyQueueWithArrayLib\MyQueueWithArrayLib.csproj", "{2892DE92-F6F7-4903-AECC-35D5ABBF29BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{07DB15B9-BB13-43B6-8338-9FD0EFE310DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DB15B9-BB13-43B6-8338-9FD0EFE310DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07DB15B9-BB13-43B6-8338-9FD0EFE310DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2892DE92-F6F7-4903-AECC-35D5ABBF29BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2892DE92-F6F7-4903-AECC-35D5ABBF29BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2892DE92-F6F7-4903-AECC-35D5ABBF29BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2892DE92-F6F7-4903-AECC-35D5ABBF29BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
