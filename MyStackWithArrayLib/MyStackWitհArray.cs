@@ -34,9 +34,9 @@ public class MyStackWitհArray<T> : IEnumerable<T>
 
         T Value = _list[0];
         T[] newList = new T[_list.Length - 1];
-        for (int i = 1; i < _list.Length; i++)
+        for (int i = 0; i < _list.Length; i++)
         {
-            newList[i - 1] = _list[i];
+            newList[i] = _list[i + 1];
         }
         _list = newList;
 
