@@ -32,11 +32,11 @@ public class MyStackWitհArray<T> : IEnumerable<T>
             throw new InvalidOperationException("Stack is empty.");
         }
 
-        T Value = _list[0];
+        T Value = _list[_list.Length - 1];
         T[] newList = new T[_list.Length - 1];
-        for (int i = 0; i < _list.Length; i++)
+        for (int i = 0; i < newList.Length; i++)
         {
-            newList[i] = _list[i + 1];
+            newList[i] = _list[i];
         }
         _list = newList;
 

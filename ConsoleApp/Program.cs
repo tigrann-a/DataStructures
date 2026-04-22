@@ -69,8 +69,11 @@ list.Push(33);
 //foreach (int i in list)
 //    Console.WriteLine(i);
 
-int lastElem = list.Peek();
-Console.WriteLine(lastElem);
+//int lastElem = list.Peek();
+//Console.WriteLine(lastElem);
+
+int elem = list.Pop();
+Console.WriteLine(elem);
 
 foreach (int i in list)
     Console.WriteLine(i);
