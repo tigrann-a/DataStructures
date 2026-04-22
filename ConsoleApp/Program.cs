@@ -2,6 +2,7 @@
 using MyQueueLib;
 using MyStackLib;
 using MyStackWithArrayLib;
+using MyQueueWithArrayLib;
 
 #region MyLinkedList
 
@@ -52,12 +53,13 @@ using MyStackWithArrayLib;
 //    Console.WriteLine(item);
 #endregion
 
-MyStackWitհArray<int> list = new MyStackWitհArray<int>();
+#region MyStackWithArray
+//MyStackWitհArray<int> list = new MyStackWitհArray<int>();
 
-list.Push(3);
-list.Push(4);
-list.Push(18);
-list.Push(33);
+//list.Push(3);
+//list.Push(4);
+//list.Push(18);
+//list.Push(33);
 
 //foreach (int i in list)
 //    Console.WriteLine(i);
@@ -73,7 +75,25 @@ list.Push(33);
 //foreach (int i in list)
 //    Console.WriteLine(i);
 
-list.Clear();
+//list.Clear();
 
-foreach (int i in list)
-    Console.WriteLine(i);
+//foreach (int i in list)
+//    Console.WriteLine(i);
+#endregion
+
+#region MyQueueWithArray
+MyQueueWithArray<int> list = new MyQueueWithArray<int>();
+
+list.Enqueue(3);
+list.Enqueue(4);
+list.Enqueue(18);
+list.Enqueue(33);
+
+foreach (var item in list)
+    Console.WriteLine(item);
+
+list.Dequeue();
+
+foreach (var item in list)
+    Console.WriteLine(item);
+#endregion

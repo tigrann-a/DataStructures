@@ -37,17 +37,22 @@ public class MyQueueWithArray<T> : IEnumerable<T>
 
         return Value;
     }
+
+    public T Peek()
+    {
+        return _list[0];
+    }
+
+    public void Clear()
+    {
+        _list = new T[0];
+    }
     public IEnumerator<T> GetEnumerator()
     {
         for (int i = 0; i < _list.Length; i++)
         {
             yield return _list[i];
         }
-    }
-
-    public T Peek()
-    {
-        return _list[0];
     }
 
     IEnumerator IEnumerable.GetEnumerator()
