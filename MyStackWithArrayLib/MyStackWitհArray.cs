@@ -50,7 +50,7 @@ public class MyStackWitհArray<T> : IEnumerable<T>
             throw new InvalidOperationException("Stack is empty.");
         }
 
-        T Value = _list[0];
+        T Value = _list[_list.Length - 1];
         
         return Value;
     }

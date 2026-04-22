@@ -54,12 +54,12 @@ using MyQueueWithArrayLib;
 #endregion
 
 #region MyStackWithArray
-//MyStackWitհArray<int> list = new MyStackWitհArray<int>();
+MyStackWitհArray<int> list = new MyStackWitհArray<int>();
 
-//list.Push(3);
-//list.Push(4);
-//list.Push(18);
-//list.Push(33);
+list.Push(3);
+list.Push(4);
+list.Push(18);
+list.Push(33);
 
 //foreach (int i in list)
 //    Console.WriteLine(i);
@@ -69,11 +69,11 @@ using MyQueueWithArrayLib;
 //foreach (int i in list)
 //    Console.WriteLine(i);
 
-//int firstElem = list.Peek();
-//Console.WriteLine(firstElem);
+int lastElem = list.Peek();
+Console.WriteLine(lastElem);
 
-//foreach (int i in list)
-//    Console.WriteLine(i);
+foreach (int i in list)
+    Console.WriteLine(i);
 
 //list.Clear();
 
