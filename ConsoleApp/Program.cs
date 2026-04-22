@@ -98,4 +98,8 @@ using MyQueueWithArrayLib;
 
 //foreach (var item in list)
 //    Console.WriteLine(item);
+
+//int count = list.Count;
+
+//Console.WriteLine(count);
 #endregion

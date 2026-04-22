@@ -27,6 +27,11 @@ public class MyQueueWithArray<T> : IEnumerable<T>
 
     public T Dequeue()
     {
+        if (_list.Length == 0)
+        {
+            throw new InvalidOperationException("The queue is empty!");
+        }
+
         T Value = _list[0];
         T[] newList = new T[_list.Length - 1];
         for (int i = 0; i < newList.Length; i++)
@@ -40,6 +45,11 @@ public class MyQueueWithArray<T> : IEnumerable<T>
 
     public T Peek()
     {
+        if (_list.Length == 0)
+        {
+            throw new InvalidOperationException("The queue is empty!");
+        }
+
         return _list[0];
     }
 

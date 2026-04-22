@@ -27,6 +27,11 @@ public class MyStackWitհArray<T> : IEnumerable<T>
 
     public T Pop()
     {
+        if (_list.Length == 0)
+        {
+            throw new InvalidOperationException("Stack is empty.");
+        }
+
         T Value = _list[0];
         T[] newList = new T[_list.Length - 1];
         for (int i = 1; i < _list.Length; i++)
@@ -40,6 +45,11 @@ public class MyStackWitհArray<T> : IEnumerable<T>
 
     public T Peek()
     {
+        if(_list.Length == 0)
+        {
+            throw new InvalidOperationException("Stack is empty.");
+        }
+
         T Value = _list[0];
         
         return Value;
