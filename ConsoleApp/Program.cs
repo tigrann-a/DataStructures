@@ -82,18 +82,20 @@ using MyQueueWithArrayLib;
 #endregion
 
 #region MyQueueWithArray
-MyQueueWithArray<int> list = new MyQueueWithArray<int>();
+//MyQueueWithArray<int> list = new MyQueueWithArray<int>();
 
-list.Enqueue(3);
-list.Enqueue(4);
-list.Enqueue(18);
-list.Enqueue(33);
+//list.Enqueue(3);
+//list.Enqueue(4);
+//list.Enqueue(18);
+//list.Enqueue(33);
 
-foreach (var item in list)
-    Console.WriteLine(item);
+//foreach (var item in list)
+//    Console.WriteLine(item);
 
-list.Dequeue();
+//list.Dequeue();
 
-foreach (var item in list)
-    Console.WriteLine(item);
+//Console.WriteLine("---");
+
+//foreach (var item in list)
+//    Console.WriteLine(item);
 #endregion
