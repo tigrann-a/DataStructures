@@ -3,6 +3,7 @@ using MyQueueLib;
 using MyStackLib;
 using MyStackWithArrayLib;
 using MyQueueWithArrayLib;
+using MyBinaryTreeLib;
 
 #region MyLinkedList
 
@@ -54,12 +55,12 @@ using MyQueueWithArrayLib;
 #endregion
 
 #region MyStackWithArray
-MyStackWitհArray<int> list = new MyStackWitհArray<int>();
+//MyStackWitհArray<int> list = new MyStackWitհArray<int>();
 
-list.Push(3);
-list.Push(4);
-list.Push(18);
-list.Push(33);
+//list.Push(3);
+//list.Push(4);
+//list.Push(18);
+//list.Push(33);
 
 //foreach (int i in list)
 //    Console.WriteLine(i);
@@ -72,11 +73,11 @@ list.Push(33);
 //int lastElem = list.Peek();
 //Console.WriteLine(lastElem);
 
-int elem = list.Pop();
-Console.WriteLine(elem);
+//int elem = list.Pop();
+//Console.WriteLine(elem);
 
-foreach (int i in list)
-    Console.WriteLine(i);
+//foreach (int i in list)
+//    Console.WriteLine(i);
 
 //list.Clear();
 
@@ -105,4 +106,19 @@ foreach (int i in list)
 //int count = list.Count;
 
 //Console.WriteLine(count);
+#endregion
+
+#region MyBinaryTree
+
+MyBinaryTree<int> tree = new MyBinaryTree<int>();
+
+tree.Add(3);
+tree.Add(2);
+tree.Add(4);
+
+foreach (var item in tree)
+{
+    Console.WriteLine(item);
+}
+
 #endregion
