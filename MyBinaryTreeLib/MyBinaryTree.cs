@@ -122,27 +122,21 @@ public class MyBinaryTree<T> : IEnumerable<T> where T : IComparable<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        return InOrder(_root).GetEnumerator();
+        return InOrderEnumerate(_root).GetEnumerator();
     }
 
-    private IEnumerable<T> InOrder(MyBinaryTreeNode<T> node)
+    private IEnumerable<T> InOrderEnumerate(MyBinaryTreeNode<T> node)
     {
         if(node == null)
-        {
             yield break;
-        }
 
-        foreach (var item in InOrder(node.Left))
-        {
+        foreach (var item in InOrderEnumerate(node.Left))
             yield return item;
-        }
-
+        
         yield return node.Value;
 
-        foreach (var item in InOrder(node.Right))
-        {
+        foreach (var item in InOrderEnumerate(node.Right))
             yield return item;
-        }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
