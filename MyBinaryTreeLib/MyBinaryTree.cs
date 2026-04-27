@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 namespace MyBinaryTreeLib;
 
@@ -39,27 +40,28 @@ public class MyBinaryTree<T> : IEnumerable<T> where T : IComparable<T>
 
     public void Add(T item)
     {
-        AddRecursive(item);
+        _root = Add(_root, item);
     }
 
-    public MyBinaryTreeNode<T> AddRecursive(T item)
+    public MyBinaryTreeNode<T> Add(MyBinaryTreeNode<T> current, T item)
     {
-        if (_root == null)
+        
+        if (current == null)
         {
-            _root = new MyBinaryTreeNode<T>(item);
-            return _root;
+            current = new MyBinaryTreeNode<T>(item);
+            return current;
         }
 
-        MyBinaryTreeNode<T> current = _root;
+        int compResult = item.CompareTo(current.Value);
 
-        if (item.CompareTo(current.Value) < 0)
+        if (compResult < 0)
         {
-            current.Left = AddRecursive(item);
+            current.Left = Add(current.Left, item);
         }
 
-        if (item.CompareTo(current.Value) < 0)
+        if (compResult > 0)
         {
-            current.Right = AddRecursive(item);
+            current.Right = Add(current.Right, item);
         }
 
         return current;
@@ -120,7 +122,27 @@ public class MyBinaryTree<T> : IEnumerable<T> where T : IComparable<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        yield return _root.Value;
+        return InOrder(_root).GetEnumerator();
+    }
+
+    private IEnumerable<T> InOrder(MyBinaryTreeNode<T> node)
+    {
+        if(node == null)
+        {
+            yield break;
+        }
+
+        foreach (var item in InOrder(node.Left))
+        {
+            yield return item;
+        }
+
+        yield return node.Value;
+
+        foreach (var item in InOrder(node.Right))
+        {
+            yield return item;
+        }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
