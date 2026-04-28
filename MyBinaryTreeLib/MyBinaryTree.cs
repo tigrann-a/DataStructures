@@ -67,6 +67,40 @@ public class MyBinaryTree<T> : IEnumerable<T> where T : IComparable<T>
         return current;
     }
 
+    public void Remove(T item)
+    {
+        RemoveItem(item);
+    }
+
+    private void RemoveItem(T item)
+    {
+        MyBinaryTreeNode<T>? current = _root;
+        MyBinaryTreeNode<T> parent = current;
+        
+        while (current != null)
+        {
+            int result = item.CompareTo(current.Value);
+            if (result < 0)
+            {
+                parent = current;
+                current = current.Left;
+            }
+            else if (result > 0)
+            {
+                parent = current;
+                current = current.Right;
+            }
+            else
+            {
+                if(parent.Left == current)
+                    parent.Left = null;
+                else if(parent.Right == current)
+                    parent.Right = null;
+                return;
+            }
+        }
+    }
+
     #region PreOrderTraversal
 
     //public delegate void Action<T>(T item);

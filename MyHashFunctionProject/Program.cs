@@ -1,4 +1,5 @@
 ﻿string txt = "lorem ipsum dolo";
+int index = 0;
 int hashValue = 0;
 
 for (int i = 0; i < 4; i++)
@@ -9,7 +10,6 @@ for (int i = 0; i < 4; i++)
     Console.WriteLine(decimalValue);
     Console.WriteLine(binaryValue);
     hashValue += decimalValue;
-    txt = txt.Substring(4);
 }
 
 Console.WriteLine($"Hash Value is: {hashValue}");

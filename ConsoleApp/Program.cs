@@ -121,5 +121,14 @@ foreach (var item in tree)
     Console.WriteLine(item);
 }
 
+Console.WriteLine();
+
+tree.Remove(2);
+
+foreach (var item in tree)
+{
+    Console.WriteLine(item);
+}
+
 #endregion
 
