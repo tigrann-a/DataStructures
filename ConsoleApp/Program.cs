@@ -115,6 +115,7 @@ MyBinaryTree<int> tree = new MyBinaryTree<int>();
 tree.Add(3);
 tree.Add(2);
 tree.Add(4);
+tree.Add(11);
 
 foreach (var item in tree)
 {
@@ -123,7 +124,7 @@ foreach (var item in tree)
 
 Console.WriteLine();
 
-tree.Remove(2);
+tree.Remove(11);
 
 foreach (var item in tree)
 {
