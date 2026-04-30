@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 
-namespace MySetProject;
+namespace MySetLib;
 
-public class MySet<T> : IEnumerable<T> where T : ICompareable
+public class MySet<T> : IEnumerable<T> where T : IComparable
 {
     private readonly List<T> _items = new List<T>();
 
@@ -62,22 +62,6 @@ public class MySet<T> : IEnumerable<T> where T : ICompareable
             AddSkipDublicates(item);
         }
     }
-
-    //private void AddDublicates(T item)
-    //{
-    //    if (Contains(item))
-    //    {
-    //        _items.Add(item);
-    //    }
-    //}
-
-    //private void AddRangeDublicates(IEnumerable<T> items)
-    //{
-    //    foreach (T item in items)
-    //    {
-    //        AddDublicates(item);
-    //    }
-    //}
 
     public MySet<T> Union(MySet<T> other)
     {
