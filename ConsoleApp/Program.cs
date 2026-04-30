@@ -1,9 +1,4 @@
-﻿using MyLinkedListLib;
-using MyQueueLib;
-using MyStackLib;
-using MyStackWithArrayLib;
-using MyQueueWithArrayLib;
-using MyBinaryTreeLib;
+﻿
 
 #region MyLinkedList
 
@@ -110,26 +105,26 @@ using MyBinaryTreeLib;
 
 #region MyBinaryTree
 
-MyBinaryTree<int> tree = new MyBinaryTree<int>();
+//MyBinaryTree<int> tree = new MyBinaryTree<int>();
 
-tree.Add(3);
-tree.Add(2);
-tree.Add(4);
-tree.Add(11);
+//tree.Add(3);
+//tree.Add(2);
+//tree.Add(4);
+//tree.Add(11);
 
-foreach (var item in tree)
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in tree)
+//{
+//    Console.WriteLine(item);
+//}
 
-Console.WriteLine();
+//Console.WriteLine();
 
-tree.Remove(11);
+//tree.Remove(11);
 
-foreach (var item in tree)
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in tree)
+//{
+//    Console.WriteLine(item);
+//}
 
 #endregion
 

@@ -10,7 +10,7 @@
         <ComboBox Name="leftSet" HorizontalAlignment="Left" Margin="77,120,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="leftSet_SelectionChanged"/>
         <ComboBox Name="operation" HorizontalAlignment="Left" Margin="224,120,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox Name="rightSet" HorizontalAlignment="Left" Margin="370,120,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="rightSet_SelectionChanged"/>
-        <Button Content="Button" Width="96" Margin="526,120,178,292" Click="Button_Click"/>
+        <Button Content="Button" Width="96" Margin="503,120,201,292" Click="Button_Click"/>
         <ListBox Name="leftMembers" Margin="77,173,603,87"/>
         <ListBox Name="rightMembers" Margin="370,173,310,87"/>
         <ListBox Name="resultSet" Margin="526,173,128,87"/>

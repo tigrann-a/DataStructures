@@ -2,7 +2,7 @@
 
 namespace MySetLib;
 
-public class MySet<T> : IEnumerable<T> where T : IComparable
+public class MySet<T> : IEnumerable<T> where T : IComparable<T>
 {
     private readonly List<T> _items = new List<T>();
 
